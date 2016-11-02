@@ -15,4 +15,4 @@
 //     return view('welcome');
 // });
 
-Route::get('/book/{locale}', 'BooksController@index');
+Route::get('{locale}/book/{book_id}', 'BooksController@index');

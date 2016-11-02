@@ -5,12 +5,11 @@
 	</head>
 	<body>
 		<div id="magazine" class="center">
-			<!-- {{trans('language.message')}} -->
-			@foreach($book as $page)
+			@foreach($lines as $line)
 				<div>
 					<span class="text">
 						<p>
-							{{$page->text}}
+							{{$line->text}}
 						</p>
 					</span>
 				</div>

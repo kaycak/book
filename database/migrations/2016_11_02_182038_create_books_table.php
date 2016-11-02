@@ -13,12 +13,10 @@ class CreateBooksTable extends Migration
      */
     public function up()
     {
-        Schema::create('book_1', function (Blueprint $table) {
+        Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
-            $table->bigInteger('page_number');
-            $table->string('header');
-            $table->string('sub_header');
-            $table->text('text');
+            $table->string('name');
+            $table->string('logo');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateBooksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('book_1');
+        Schema::dropIfExists('books');
     }
 }

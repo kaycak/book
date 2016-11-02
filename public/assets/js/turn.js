@@ -352,7 +352,7 @@ turnMethods = {
 	_addPage: function(page) {
 		
 		var data = this.data(),
-			element = data.pageObjs[page];
+		element = data.pageObjs[page];
 
 		if (element)
 			if (turnMethods._necessPage.call(this, page)) {
